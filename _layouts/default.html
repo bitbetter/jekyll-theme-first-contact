@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{{site.title}}</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V2QB8C5RFW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V2QB8C5RFW');
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-2">{{site.title}}</h1>
+      <h3 class="mb-5">
+        <em>{{site.sub_title}}</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Make an offer</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <section class="content-section bg-primary text-white" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="mt-5 container-fluid">
+                <form action="https://formspree.io/f/{{site.formspree_id}}" method="POST">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input required name="name" type="text" class="form-control" id="name" aria-describedby="emailHelp">      
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea required name="message" class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-light mr-4 btn-xl" style="cursor:pointer">Send</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!--footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="#!">
+            <i class="icon-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer-->
+
+  <!-- Scroll to Top Button-->
+  <!--a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a-->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.js"></script>
+
+</body>
+
+</html>
+
